@@ -2,9 +2,9 @@
 
 > Vue Animated typing in ~400 bytes 🐡 of JavaScript.
 
-[DEMO](https://catalinmiron.github.io/react-typical/)
+[DEMO](https://turkyden.github.io/vue-typical/example/index.html)
 
-![Vue Typical](./demo.gif)
+![Vue Typical](./vue-typical.gif)
 
 Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical)
 
