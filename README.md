@@ -4,7 +4,7 @@
 
 [DEMO](https://catalinmiron.github.io/react-typical/)
 
-<!-- ![React Typical](react-typical.gif) -->
+![Vue Typical](./demo.gif)
 
 Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical)
 
@@ -20,33 +20,45 @@ npm install --save vue-typical
 
 ``` html
 <template>
-  <div id="app">
-    <Typical
-      v-bind:steps="steps"
-      v-bind:loop="loop"
-      v-bind:wrapper="wrapper"
-    />
+  <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center">
+    <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
+      <Typical
+        v-bind:steps="['Hello', 1000, 'Hello world!', 500]"
+        v-bind:loop=1
+        v-bind:wrapper="'h2'"
+        v-bind:className="'vt-title'"
+      />
+      <Typical
+        v-bind:steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
+        v-bind:loop=3
+        v-bind:wrapper="'h3'"
+        v-bind:className="'vt-subTitle'"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import Typical from 'vue-typical'
+import Typical from './index.js'
 
 export default {
   name: 'app',
   data: function() {
     return {
-      steps: ['Hello', 1000, 'Hello world!', 500],
-      loop: 1,
-      wrapper: 'span'
+      msg: 'vue typical'
     }
   },
   components: {
-    Typical: Typical
+    Typical
   }
 }
 </script>
 
+<style>
+.vt-title{
+  color: #42b983;
+}
+</style>
 ```
 
 ## Properties
@@ -56,6 +68,7 @@ prop|mandatory|type|Eg.
 |`steps`|yes|[]|`['Hello', 1000, 'World']`
 |`wrapper`|no|string|'p'
 |`loop`|no|number|`3`|
+|`className`|no|string|`vt-title`|
 
 ## Contributing
 

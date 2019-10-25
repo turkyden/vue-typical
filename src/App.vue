@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Typical 
-      v-bind:msg="msg" 
-      v-bind:steps="steps" 
-      v-bind:loop="loop" 
-      v-bind:wrapper="wrapper"
-    />
+  <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center">
+    <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
+      <Typical 
+        v-bind:steps="['Hello', 1000, 'Hello world!', 500]" 
+        v-bind:loop=1 
+        v-bind:wrapper="'h2'"
+        v-bind:className="'vt-title'" 
+      />
+      <Typical 
+        v-bind:steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]" 
+        v-bind:loop=3 
+        v-bind:wrapper="'h3'"
+        v-bind:className="'vt-subTitle'"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Typical from './components/Typical.vue'
+import Typical from './index.js'
 
 export default {
   name: 'app',
   data: function() {
     return {
-      msg: "Fucking Awesome !",
-      steps: ['Hello', 1000, 'Hello world!', 500],
-      loop: 1,
-      wrapper: 'span'
+      msg: 'vue typical'
     }
   },
   components: {
@@ -32,12 +34,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.vt-title{
+  color: #42b983;
 }
 </style>
