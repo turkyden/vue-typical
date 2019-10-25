@@ -65,12 +65,12 @@ export default {
 
 ## Properties
 
-prop|mandatory|type|Eg.
-|--|--|--|--|
-|`steps`|yes|[]|`['Hello', 1000, 'World']`
-|`wrapper`|no|string|`'p'`
-|`loop`|no|number|`3`|
-|`className`|no|string|`'vt-title'`|
+Prop|Required|Type|Eg.| Default |
+|--|--|--|--|--:|
+|`steps`|True|Array|`['Hello', 1000, 'Hello world!', 500]`| - |
+|`wrapper`|False|String|`'p'`|`'div'`
+|`loop`|False|Number|`3` or `'Infinity'` |`1`|
+|`className`|False|String|`'vt-title'`| - |
 
 ## Contributing
 
