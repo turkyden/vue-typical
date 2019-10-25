@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Typical from './index.js'
+import Typical from '../index.js'
 
 export default {
   name: 'app',
