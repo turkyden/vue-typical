@@ -3,10 +3,22 @@ import { type, type as loopedType } from '@camwiegert/typical';
 export default {
   name: 'Typical',
   props: {
-    steps: Array,
-    wrapper: String,
-    loop: Number,
-    className: String,
+    steps: {
+      type: Array,
+      required: true
+    },
+    wrapper: {
+      type: String,
+      default: 'div'
+    },
+    loop: {
+      type: Number,
+      default: 1
+    },
+    className: {
+      type: String,
+      default: ''
+    }
   },
   render: function(createElement) {
     return createElement(
@@ -21,7 +33,7 @@ export default {
     const { steps, loop } = this;
     if (loop === Infinity) {
       type(this.$refs.myRef, ...steps, loopedType);
-    } else if (typeof loop === "number") {
+    } else if (typeof loop === "number" && loop > 0) {
       type(
         this.$refs.myRef,
         ...Array(loop)
