@@ -66,9 +66,9 @@ export default {
 prop|mandatory|type|Eg.
 |--|--|--|--|
 |`steps`|yes|[]|`['Hello', 1000, 'World']`
-|`wrapper`|no|string|'p'
+|`wrapper`|no|string|`'p'`
 |`loop`|no|number|`3`|
-|`className`|no|string|`vt-title`|
+|`className`|no|string|`'vt-title'`|
 
 ## Contributing
 
