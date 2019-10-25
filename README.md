@@ -2,7 +2,7 @@
 
 > Vue Animated typing in ~400 bytes 🐡 of JavaScript.
 
-[DEMO](https://turkyden.github.io/vue-typical/example/index.html)
+[DEMO](https://turkyden.github.io/vue-typical/)
 
 ![Vue Typical](./vue-typical.gif)
 
