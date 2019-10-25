@@ -2,13 +2,15 @@
 
 > Vue Animated typing in ~400 bytes 🐡 of JavaScript.
 
-[DEMO](https://turkyden.github.io/vue-typical/)
+<!-- [DEMO](https://turkyden.github.io/vue-typical/) -->
+
+[CodePen](https://codepen.io/turkyden/pen/abbWPYm)
 
 ![Vue Typical](./vue-typical.gif)
 
 Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical)
 
-[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) 
 
 ## Install
 
