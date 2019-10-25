@@ -3,6 +3,5 @@ module.exports = {
     output: {
       libraryExport: 'default'
     }
-  },
-  publicPath: '/vue-typical/docs/'
+  }
 }
