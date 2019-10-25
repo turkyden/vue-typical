@@ -1,25 +1,16 @@
 {
-  "name": "vue-typical",
-  "version": "1.1.0",
-  "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
-  "author": "Turkyden",
-  "license": "MIT",
-  "repository": "Turkyden/vue-typical",
-  "private": false,
-  "files": [
-    "dist"
-  ],
-  "main": "dist/typical.umd.js",
-  "module": "dist/typical.common.js",
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name typical src/typical.js",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@camwiegert/typical": "^0.1.1",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-typical": "^1.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",

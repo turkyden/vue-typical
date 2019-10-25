@@ -39,7 +39,7 @@ npm install --save vue-typical
 </template>
 
 <script>
-import Typical from './index.js'
+import Typical from 'vue-typical'
 
 export default {
   name: 'app',
@@ -85,7 +85,7 @@ npm run serve
 ### Compiles and minifies for production
 
 ``` npm
-npm run build:lib
+npm run build
 ```
 
 ## License
