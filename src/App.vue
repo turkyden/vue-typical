@@ -1,24 +1,23 @@
 <template>
   <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center">
     <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
-      <Typical 
-        v-bind:steps="['Hello', 1000, 'Hello world!', 500]" 
-        v-bind:loop=1 
-        v-bind:wrapper="'h2'"
-        v-bind:className="'vt-title'" 
-      />
-      <Typical 
-        v-bind:steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]" 
-        v-bind:loop=3 
-        v-bind:wrapper="'h3'"
-        v-bind:className="'vt-subTitle'"
-      />
+      <typical 
+        class="vt-title" 
+        :steps="['Hello', 1000, 'Hello world!', 500]" 
+        :wrapper="'h2'"
+      ></typical>
+      <typical 
+        class="vt-subTitle"
+        :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]" 
+        :loop=3 
+        :wrapper="'h3'"
+      ></typical>
     </div>
   </div>
 </template>
 
 <script>
-import Typical from './typical.js'
+import typical from './typical.js'
 
 export default {
   name: 'app',
@@ -28,7 +27,7 @@ export default {
     }
   },
   components: {
-    Typical
+    typical
   }
 }
 </script>

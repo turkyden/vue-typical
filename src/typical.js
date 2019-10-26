@@ -1,7 +1,7 @@
 import { type, type as loopedType } from '@camwiegert/typical';
 
 export default {
-  name: 'Typical',
+  name: 'vue-typical',
   props: {
     steps: {
       type: Array,
@@ -14,17 +14,12 @@ export default {
     loop: {
       type: Number,
       default: 1
-    },
-    className: {
-      type: String,
-      default: ''
     }
   },
   render: function(createElement) {
     return createElement(
       this.wrapper, 
       {
-        class: this.className,
         ref: 'myRef',
       }
     )
