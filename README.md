@@ -6,11 +6,17 @@
 
 [CodePen](https://codepen.io/turkyden/pen/abbWPYm)
 
-![Vue Typical](./vue-typical.gif)
+[![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
 
 Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical)
 
 [![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) 
+
+## CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
+```
 
 ## Install
 
@@ -22,20 +28,18 @@ npm install --save vue-typical
 
 ``` html
 <template>
-  <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center">
-    <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
-      <typical
-        class="vt-title"
-        :steps="['Hello', 1000, 'Hello world!', 500]"
-        :wrapper="'h2'"
-      ></typical>
-      <typical
-        class="vt-subTitle"
-        :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-        :loop=3
-        :wrapper="'h3'"
-      ></typical>
-    </div>
+  <div id="app">
+    <typical
+      class="vt-title"
+      :steps="['Hello', 1000, 'Hello world!', 500]"
+      :wrapper="'h2'"
+    ></typical>
+    <typical
+      class="vt-subTitle"
+      :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
+      :loop=3
+      :wrapper="'h3'"
+    ></typical>
   </div>
 </template>
 
@@ -69,7 +73,6 @@ Prop|Required|Type|Eg.| Default |
 |`steps`|True|Array|`['Hello', 1000, 'Hello world!', 500]`| - |
 |`wrapper`|False|String|`'p'`|`'div'`
 |`loop`|False|Number|`3` or `'Infinity'` |`1`|
-|`class`|False|String|`'vt-title'`| - |
 
 ## Contributing
 
