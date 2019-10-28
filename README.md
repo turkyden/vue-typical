@@ -12,16 +12,18 @@ Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/
 
 [![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) 
 
-## CDN
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
-```
-
 ## Install
+
+You can install vue-typical via npm:
 
 ```bash
 npm install --save vue-typical
+```
+
+Or use it directly in browser via cdn service:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
 ```
 
 ## Usage
@@ -37,7 +39,7 @@ npm install --save vue-typical
     <typical
       class="vt-subTitle"
       :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-      :loop=3
+      :loop="3"
       :wrapper="'h3'"
     ></typical>
   </div>
