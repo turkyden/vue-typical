@@ -5,6 +5,7 @@
   "author": "Turkyden",
   "license": "MIT",
   "repository": "Turkyden/vue-typical",
+  "homepage": "https://turkyden.github.io/vue-typical",
   "private": false,
   "files": [
     "dist"
@@ -14,6 +15,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name typical src/typical.js",
+    "build:docs": "vue-cli-service build --dest build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
