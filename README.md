@@ -4,7 +4,7 @@
 
 <!-- [DEMO](https://turkyden.github.io/vue-typical/) -->
 
-[CodePen](https://codepen.io/turkyden/pen/abbWPYm)
+[Preview in CodePen &rarr;](https://codepen.io/turkyden/pen/abbWPYm)
 
 [![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
 
