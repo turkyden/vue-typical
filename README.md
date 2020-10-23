@@ -19,7 +19,7 @@ Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/
 You can install vue-typical via npm:
 
 ```bash
-npm install --save vue-typical
+npm install vue-typical
 ```
 
 Or use it directly in browser via cdn service:
