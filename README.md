@@ -2,7 +2,7 @@
 
 English | [简体中文](./README.zh-cn.md) 
 
-Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical)
+Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical).
 
 [![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) 
 
