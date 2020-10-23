@@ -4,7 +4,9 @@
 
 <!-- [DEMO](https://turkyden.github.io/vue-typical/) -->
 
-English | [简体中文](./README.zh-cn.md) [Preview in CodePen &rarr;](https://codepen.io/turkyden/pen/abbWPYm)
+English | [简体中文](./README.zh-cn.md) 
+
+[Preview in CodePen &rarr;](https://codepen.io/turkyden/pen/abbWPYm)
 
 [![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
 
