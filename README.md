@@ -26,44 +26,18 @@ Or use it directly in browser via cdn service:
 
 ## Usage
 
-``` html
-<template>
-  <div id="app">
-    <typical
-      class="vt-title"
-      :steps="['Hello', 1000, 'Hello world!', 500]"
-      :wrapper="'h2'"
-    ></typical>
-    <typical
-      class="vt-subTitle"
-      :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-      :loop="3"
-      :wrapper="'h3'"
-    ></typical>
-  </div>
-</template>
-
-<script>
-import typical from 'vue-typical'
-
-export default {
-  name: 'app',
-  data: function() {
-    return {
-      msg: 'vue typical'
-    }
-  },
-  components: {
-    typical
-  }
-}
-</script>
-
-<style>
-.vt-title{
-  color: #42b983;
-}
-</style>
+``` vue
+<typical
+  class="vt-title"
+  :steps="['Hello', 1000, 'Hello world!', 500]"
+  :wrapper="'h2'"
+></typical>
+<typical
+  class="vt-subTitle"
+  :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
+  :loop="3"
+  :wrapper="'h3'"
+></typical>
 ```
 
 ## Properties
