@@ -1,4 +1,6 @@
-# vue-typical English | [简体中文](./README.zh-cn.md) 
+# vue-typical
+
+English | [简体中文](./README.zh-cn.md) 
 
 > Vue Animated typing in ~400 bytes 🐡 of JavaScript.
 
