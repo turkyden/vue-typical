@@ -1,10 +1,8 @@
-# vue-typical
+# vue-typical English | [简体中文](./README.zh-cn.md) 
 
 > Vue Animated typing in ~400 bytes 🐡 of JavaScript.
 
 <!-- [DEMO](https://turkyden.github.io/vue-typical/) -->
-
-English | [简体中文](./README.zh-cn.md) 
 
 [Preview in CodePen &rarr;](https://codepen.io/turkyden/pen/abbWPYm)
 
