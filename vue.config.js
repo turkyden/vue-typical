@@ -5,6 +5,6 @@ module.exports = {
     }
   },
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/vue-typical/'
+  ? 'https://cdn.jsdelivr.net/gh/turkyden/vue-typical@gh-pages/'
   : '/'
 }

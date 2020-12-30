@@ -28,12 +28,11 @@ Or use it directly in browser via cdn service:
 
 ``` vue
 <typical
-  class="vt-title"
   :steps="['Hello', 1000, 'Hello world!', 500]"
   :wrapper="'h2'"
 ></typical>
 <typical
-  class="vt-subTitle"
+  class="typicalWrapper"
   :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
   :loop="3"
   :wrapper="'h3'"
@@ -47,6 +46,21 @@ Prop|Required|Type|Eg.| Default |
 |`steps`|True|Array|`['Hello', 1000, 'Hello world!', 500]`| - |
 |`wrapper`|False|String|`'p'`|`'div'`
 |`loop`|False|Number|`3` or `'Infinity'` |`1`|
+
+## Style
+
+Add the blink cursor effect with `typicalWrapper` classname.
+
+```css
+.typicalWrapper::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+```
 
 ## Contributing
 
