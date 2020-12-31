@@ -1,6 +1,6 @@
 {
-  "name": "vue-typical",
-  "version": "1.4.2",
+  "name": "@Turkyden/vue-typical",
+  "version": "1.4.3",
   "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
   "author": "Turkyden",
   "license": "MIT",
@@ -10,8 +10,8 @@
   "files": [
     "dist"
   ],
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/" 
+  "publishConfig": {
+    "registry": "https://github.com/Turkyden"
   },
   "main": "dist/typical.umd.js",
   "module": "dist/typical.common.js",
