@@ -1,8 +1,8 @@
 # vue-typical
 
-简体中文 | [English](./README.md) 
+简体中文 | [English](./README.md)
 
-Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical).
+仅用约 400 bytes 🐡 JavaScript 写成的 Vue 自动打字动画。 基于强大的 [@camwiegert](https://github.com/camwiegert) 的 [typical](https://github.com/camwiegert/typical) 库。
 
 [![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
@@ -10,66 +10,73 @@ Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical l
 
 [![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
 
-## Install
+## 安装
 
-You can install vue-typical via npm:
+你可以通过 `npm` 安装这个依赖：
 
 ```bash
 npm install vue-typical
 ```
 
-Or use it directly in browser via cdn service:
+或者直接使用 cdn：
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
 ```
 
-## Usage
+## 使用
 
-``` vue
+```vue
 <typical
-  class="vt-title"
-  :steps="['Hello', 1000, 'Hello world!', 500]"
-  :wrapper="'h2'"
+	class="vt-title"
+	:steps="['Hello', 1000, 'Hello world!', 500]"
+	:wrapper="'h2'"
 ></typical>
 <typical
-  class="vt-subTitle"
-  :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-  :loop="3"
-  :wrapper="'h3'"
+	class="vt-subTitle"
+	:steps="[
+		'Fucking',
+		1000,
+		'Fucking Awesome!',
+		500,
+		'Fucking Awesome! Aha :-) 👋',
+		1000,
+	]"
+	:loop="3"
+	:wrapper="'h3'"
 ></typical>
 ```
 
-## Properties
+## 属性
 
-Prop|Required|Type|Eg.| Default |
-|--|--|--|--|--:|
-|`steps`|True|Array|`['Hello', 1000, 'Hello world!', 500]`| - |
-|`wrapper`|False|String|`'p'`|`'div'`
-|`loop`|False|Number|`3` or `'Infinity'` |`1`|
+| Prop      | 必要  | 类型   | 例子                                   |    默认 |
+| --------- | ----- | ------ | -------------------------------------- | ------: |
+| `steps`   | True  | Array  | `['Hello', 1000, 'Hello world!', 500]` |       - |
+| `wrapper` | False | String | `'p'`                                  | `'div'` |
+| `loop`    | False | Number | `3` or `'Infinity'`                    |     `1` |
 
-## Contributing
+## 贡献
 
-``` npm
+```npm
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开发环境打包
 
-``` npm
+```npm
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生产环境打包
 
-``` npm
+```npm
 npm run build
 ```
 
-## License
+## 协议
 
-This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
+这个库基于 [@camwiegert/typical](https://github.com/camwiegert/typical)，不过是一个 vue 版本。
 
-Inspired by [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical).
+被 [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical) 激发而生。
 
 MIT © [Turkyden](https://github.com/Turkyden)
