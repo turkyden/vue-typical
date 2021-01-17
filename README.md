@@ -80,6 +80,27 @@ npm run serve
 npm run build
 ```
 
+## Contributors
+
+Thanks goes to these people (emoji key):
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://kentcdodds.com">
+        <img src="https://avatars.githubusercontent.com/u/1500684?v=3?s=100" width="100px;" alt=""/><br />
+        <sub><b>Kent C. Dodds</b></sub></a><br />
+        💻📖🚇⚠️
+    </td>
+    <td align="center">
+      <a href="https://github.com/KnowsCount">
+        <img src="https://avatars3.githubusercontent.com/u/56480008?s=460&u=19d370371e9be3b09766a4dae4435de3593fd0a9&v=4" width="100px;" alt=""/><br />
+        <sub><b>KnowsCount</b></sub></a><br />
+        📖
+    </td>
+  </tr>
+</table>
+
 ## License
 
 This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
