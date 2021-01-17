@@ -87,9 +87,9 @@ Thanks goes to these people (emoji key):
 <table>
   <tr>
     <td align="center">
-      <a href="https://kentcdodds.com">
-        <img src="https://avatars.githubusercontent.com/u/1500684?v=3?s=100" width="100px;" alt=""/><br />
-        <sub><b>Kent C. Dodds</b></sub></a><br />
+      <a href="https://github.com/Turkyden">
+        <img src="https://avatars0.githubusercontent.com/u/24560160?s=460&u=36a6072b8220e6ad7c0c7f7dbf97cc3dd796a8d0&v=4" width="100px;" alt=""/><br />
+        <sub><b>Turkyden</b></sub></a><br />
         💻📖🚇⚠️
     </td>
     <td align="center">
@@ -99,7 +99,7 @@ Thanks goes to these people (emoji key):
         📖
     </td>
   </tr>
-</table>
+</table>  
 
 ## License
 
