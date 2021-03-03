@@ -32,9 +32,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "dist/typical.umd.js",
   "module": "dist/typical.common.js",
   "scripts": {
