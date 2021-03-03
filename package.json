@@ -1,29 +1,52 @@
 {
-  "name": "@Turkyden/vue-typical",
-  "version": "1.4.3",
+  "name": "vue-typical",
+  "version": "1.4.2",
   "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
+  "keywords": [
+    "vue",
+    "vue-component",
+    "typical",
+    "typing",
+    "animation"
+  ],
+  "authors": {
+    "name": "Turkyden",
+    "email": "wj871287@gmail.com"
+  },
   "author": "Turkyden",
   "license": "MIT",
-  "repository": "Turkyden/vue-typical",
   "homepage": "https://turkyden.github.io/vue-typical",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Turkyden/vue-typical.git"
+  },
+  "bugs": {
+    "url": "http://github.com/Turkyden/vue-typical/issues"
+  },
   "private": false,
   "files": [
-    "dist"
+    "dist",
+    "lib",
+    "es",
+    "package.json",
+    "README.md",
+    "LICENSE"
   ],
   "publishConfig": {
-    "registry": "https://github.com/Turkyden"
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "dist/typical.umd.js",
   "module": "dist/typical.common.js",
   "scripts": {
+    "start": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name typical src/typical.js",
     "build:docs": "vue-cli-service build --dest build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "exit 0"
   },
   "dependencies": {
-    "@camwiegert/typical": "^0.1.1",
-    "core-js": "^2.6.5",
+    "core-js": "^2.6.12",
     "vue": "^2.6.10"
   },
   "devDependencies": {
