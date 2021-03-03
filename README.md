@@ -4,7 +4,7 @@ English | [简体中文](./README.zh-cn.md)
 
 Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical).
 
-[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/vue-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 [![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
 
@@ -103,6 +103,6 @@ Thanks goes to these people (emoji key):
 
 This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
 
-Inspired by [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical).
+Inspired by [@catalinmiron/vue-typical](https://github.com/catalinmiron/vue-typical).
 
 MIT © [Turkyden](https://github.com/Turkyden)
