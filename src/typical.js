@@ -1,5 +1,3 @@
-// import "core-js";
-
 export async function type(node, ...args) {
   for (const arg of args) {
       switch (typeof arg) {
