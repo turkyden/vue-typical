@@ -47,6 +47,21 @@ npm install vue-typical
 | `wrapper` | False | String | `'p'`                                  | `'div'` |
 | `loop`    | False | Number | `3` or `'Infinity'`                    |     `1` |
 
+## 样式
+
+想要光标闪烁效果，可以给标签加上 `typicalWrapper` CSS 类名.
+
+```css
+.typicalWrapper::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+```
+
 ## 贡献
 
 ```npm
@@ -64,6 +79,27 @@ npm run serve
 ```npm
 npm run build
 ```
+
+## 贡献者
+
+Thanks goes to these people (emoji key):
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Turkyden">
+        <img src="https://avatars0.githubusercontent.com/u/24560160?s=460&u=36a6072b8220e6ad7c0c7f7dbf97cc3dd796a8d0&v=4" width="100px;" alt=""/><br />
+        <sub><b>Turkyden</b></sub></a><br />
+        💻📖🚇⚠️
+    </td>
+    <td align="center">
+      <a href="https://github.com/KnowsCount">
+        <img src="https://avatars3.githubusercontent.com/u/56480008?s=460&u=19d370371e9be3b09766a4dae4435de3593fd0a9&v=4" width="100px;" alt=""/><br />
+        <sub><b>KnowsCount</b></sub></a><br />
+        📖
+    </td>
+  </tr>
+</table>  
 
 ## 协议
 
