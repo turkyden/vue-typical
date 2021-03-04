@@ -34,7 +34,7 @@ npm install vue-typical
 <typical
   class="typicalWrapper"
   :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-  :loop="3"
+  :loop="Infinity"
   :wrapper="'h3'"
 ></typical>
 ```

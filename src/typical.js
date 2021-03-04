@@ -76,7 +76,7 @@ export default {
     return createElement(
       this.wrapper, 
       {
-        ref: 'myRef',
+        ref: 'myRef'
       }
     )
   },

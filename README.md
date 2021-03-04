@@ -32,7 +32,7 @@ Or use it directly in browser via cdn service:
 <typical
   class="typicalWrapper"
   :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-  :loop="3"
+  :loop="Infinity"
   :wrapper="'h3'"
 ></typical>
 ```
