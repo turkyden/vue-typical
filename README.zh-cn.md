@@ -28,22 +28,14 @@ npm install vue-typical
 
 ```vue
 <typical
-	class="vt-title"
-	:steps="['Hello', 1000, 'Hello world!', 500]"
-	:wrapper="'h2'"
+  :steps="['Hello', 1000, 'Hello world!', 500]"
+  :wrapper="'h2'"
 ></typical>
 <typical
-	class="vt-subTitle"
-	:steps="[
-		'Fucking',
-		1000,
-		'Fucking Awesome!',
-		500,
-		'Fucking Awesome! Aha :-) 👋',
-		1000,
-	]"
-	:loop="3"
-	:wrapper="'h3'"
+  class="typicalWrapper"
+  :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
+  :loop="3"
+  :wrapper="'h3'"
 ></typical>
 ```
 
@@ -77,6 +69,6 @@ npm run build
 
 这个库基于 [@camwiegert/typical](https://github.com/camwiegert/typical)，不过是一个 vue 版本。
 
-被 [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical) 激发而生。
+受到 [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical) 的启发。
 
 MIT © [Turkyden](https://github.com/Turkyden)
