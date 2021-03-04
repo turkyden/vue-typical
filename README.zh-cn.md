@@ -24,7 +24,7 @@ npm install vue-typical
 <script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
 ```
 
-## 使用
+## 用法
 
 ```vue
 <typical
