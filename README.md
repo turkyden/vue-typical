@@ -2,7 +2,7 @@ English | [简体中文](./README.zh-cn.md)
 
 <h1 align="center">vue-typical</h1>
 
-<p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript.</p>
+<p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript. <a href="https://vue-typical.vercel.app/" target="_blank">Preview &rarr;</a></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
