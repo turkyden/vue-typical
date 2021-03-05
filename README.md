@@ -106,6 +106,6 @@ Thanks goes to these people (emoji key):
 
 This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
 
-Inspired by [@catalinmiron/vue-typical](https://github.com/catalinmiron/vue-typical).
+Inspired by [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical).
 
 [MIT](https://github.com/Turkyden/vue-typical/blob/main/LICENSE) © [Turkyden](https://github.com/Turkyden)
