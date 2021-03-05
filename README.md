@@ -42,11 +42,11 @@ Or use it directly in browser via cdn service:
 
 ## 📑 Properties
 
-Prop|Required|Type|Eg.| Default |
-|--|--|--|--|--:|
-|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, () => alert('Word')]`| - |
-|`loop`|False|Number|`3` or `'Infinity'` |`1`|
-|`wrapper`|False|String|`'p'`|`'div'`
+| Prop|Required|Type|Eg.|
+|--|--|--|--|
+|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, () => alert('Word')]`|
+|`loop`|False|Number|`1` or `'Infinity'` |
+|`wrapper`|False|String|`'div'`|
 
 ## ✨ Style
 
