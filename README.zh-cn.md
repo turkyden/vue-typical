@@ -44,9 +44,9 @@ npm install vue-typical
 
 Prop|Required|Type|Eg.| Default |
 |--|--|--|--|--:|
-|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, 'Hello world!', 500]`| - |
-|`wrapper`|False|String|`'p'`|`'div'`
+|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, () => alert('Word')]`| - |
 |`loop`|False|Number|`3` or `'Infinity'` |`1`|
+|`wrapper`|False|String|`'p'`|`'div'`
 
 ## ✨ 样式
 
