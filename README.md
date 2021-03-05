@@ -9,7 +9,7 @@ English | [简体中文](./README.zh-cn.md)
 </p>
 
 [![Vue Typical](./vue-typical.gif)](https://vue-typical.vercel.app/)
-## Install
+## 📦 Install
 
 You can install vue-typical via npm:
 
@@ -23,7 +23,7 @@ Or use it directly in browser via cdn service:
 <script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
 ```
 
-## Usage
+## 🚀 Usage
 
 ```html
 <typical
@@ -40,15 +40,15 @@ Or use it directly in browser via cdn service:
 
 [![Edit vue-typical](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-typical-cqj9q?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark)
 
-## Properties
+## 📑 Properties
 
 Prop|Required|Type|Eg.| Default |
 |--|--|--|--|--:|
-|`steps`|True|Array|`['Hello', 1000, 'Hello world!', 500]`| - |
+|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, 'Hello world!', 500]`| - |
 |`wrapper`|False|String|`'p'`|`'div'`
 |`loop`|False|Number|`3` or `'Infinity'` |`1`|
 
-## Style
+## ✨ Style
 
 Add the blink cursor effect with `typicalWrapper` classname.
 
@@ -63,7 +63,7 @@ Add the blink cursor effect with `typicalWrapper` classname.
 }
 ```
 
-## Contributing
+## 🔨 Contributing
 
 ``` npm
 npm install
@@ -81,7 +81,7 @@ npm run serve
 npm run build
 ```
 
-## Contributors
+## ❤️ Contributors
 
 Thanks goes to these people (emoji key):
 
@@ -108,4 +108,4 @@ This library is based on [@camwiegert/typical](https://github.com/camwiegert/typ
 
 Inspired by [@catalinmiron/vue-typical](https://github.com/catalinmiron/vue-typical).
 
-MIT © [Turkyden](https://github.com/Turkyden)
+[MIT](https://github.com/Turkyden/vue-typical/blob/main/LICENSE) © [Turkyden](https://github.com/Turkyden)

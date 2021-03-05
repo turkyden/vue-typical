@@ -9,7 +9,7 @@
 </p>
 
 [![Vue Typical](./vue-typical.gif)](https://vue-typical.vercel.app/)
-## 安装
+## 📦 安装
 
 你可以通过 npm 安装这个依赖：
 
@@ -23,7 +23,7 @@ npm install vue-typical
 <script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
 ```
 
-## 用法
+## 🚀 用法
 
 ```html
 <typical
@@ -40,15 +40,15 @@ npm install vue-typical
 
 [![Edit vue-typical](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-typical-cqj9q?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark)
 
-## 属性
+## 📑 属性
 
-| Prop      | 必要  | 类型   | 例子                                   |    默认 |
-| --------- | ----- | ------ | -------------------------------------- | ------: |
-| `steps`   | True  | Array  | `['Hello', 1000, 'Hello world!', 500]` |       - |
-| `wrapper` | False | String | `'p'`                                  | `'div'` |
-| `loop`    | False | Number | `3` or `'Infinity'`                    |     `1` |
+Prop|Required|Type|Eg.| Default |
+|--|--|--|--|--:|
+|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, 'Hello world!', 500]`| - |
+|`wrapper`|False|String|`'p'`|`'div'`
+|`loop`|False|Number|`3` or `'Infinity'` |`1`|
 
-## 样式
+## ✨ 样式
 
 想要光标闪烁效果，可以给标签加上 `typicalWrapper` CSS 类名.
 
@@ -63,7 +63,7 @@ npm install vue-typical
 }
 ```
 
-## 贡献
+## 🔨 贡献
 
 ```npm
 npm install
@@ -81,7 +81,7 @@ npm run serve
 npm run build
 ```
 
-## 贡献者
+## ❤️ 贡献者
 
 Thanks goes to these people (emoji key):
 
@@ -102,10 +102,10 @@ Thanks goes to these people (emoji key):
   </tr>
 </table>  
 
-## 协议
+## 版权
 
-这个库基于 [@camwiegert/typical](https://github.com/camwiegert/typical)，不过是一个 vue 版本。
+该库基于 [@camwiegert/typical](https://github.com/camwiegert/typical)，不过是一个 vue 版本。
 
 受到 [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical) 的启发。
 
-MIT © [Turkyden](https://github.com/Turkyden)
+[MIT](https://github.com/Turkyden/vue-typical/blob/main/LICENSE) © [Turkyden](https://github.com/Turkyden)
