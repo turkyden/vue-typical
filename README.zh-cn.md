@@ -2,7 +2,7 @@
 
 <h1 align="center">vue-typical</h1>
 
-<p align="center">一个仅有 400 bytes 🐡 JavaScript 的 Vue 自动打字动画效果。 <a href="https://vue-typical.vercel.app/" target="_blank">效果 &rarr;</a></p>
+<p align="center">一个仅有 400 bytes 🐡 JavaScript 的 Vue 自动打字动画效果。 <a href="https://vue-typical.vercel.app/" target="_blank">演示效果 &rarr;</a></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
