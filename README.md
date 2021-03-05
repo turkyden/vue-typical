@@ -1,13 +1,14 @@
-# vue-typical
-
 English | [简体中文](./README.zh-cn.md) 
 
-Vue Animated typing in ~400 bytes 🐡 of JavaScript. Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/typical).
+<h1 align="center">vue-typical</h1>
 
-[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/vue-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+<p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript.</p>
 
-[![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
+<p align="center">
+  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
+</p>
 
+[![Vue Typical](./vue-typical.gif)](https://vue-typical.vercel.app/)
 ## Install
 
 You can install vue-typical via npm:
@@ -24,7 +25,7 @@ Or use it directly in browser via cdn service:
 
 ## Usage
 
-``` vue
+```html
 <typical
   :steps="['Hello', 1000, 'Hello world!', 500]"
   :wrapper="'h2'"
@@ -36,6 +37,8 @@ Or use it directly in browser via cdn service:
   :wrapper="'h3'"
 ></typical>
 ```
+
+[![Edit vue-typical](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-typical-cqj9q?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark)
 
 ## Properties
 

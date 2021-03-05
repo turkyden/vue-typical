@@ -1,18 +1,17 @@
-# vue-typical
-
 简体中文 | [English](./README.md)
 
-仅用约 400 bytes 🐡 JavaScript 写成的 Vue 自动打字动画。 基于强大的 [@camwiegert](https://github.com/camwiegert) 的 [typical](https://github.com/camwiegert/typical) 库。
+<h1 align="center">vue-typical</h1>
 
-[![NPM](https://img.shields.io/npm/v/vue-typical.svg)](https://www.npmjs.com/package/react-typical) [![](https://data.jsdelivr.com/v1/package/npm/vue-typical/badge)](https://www.jsdelivr.com/package/npm/vue-typical) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+<p align="center">一个仅有 400 bytes 🐡 JavaScript 的 Vue 自动打字动画效果</p>
 
-[Preview in CodePen &rarr;](https://codepen.io/turkyden/pen/abbWPYm)
+<p align="center">
+  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
+</p>
 
-[![Vue Typical](./vue-typical.gif)](https://codepen.io/turkyden/pen/abbWPYm)
-
+[![Vue Typical](./vue-typical.gif)](https://vue-typical.vercel.app/)
 ## 安装
 
-你可以通过 `npm` 安装这个依赖：
+你可以通过 npm 安装这个依赖：
 
 ```bash
 npm install vue-typical
@@ -26,7 +25,7 @@ npm install vue-typical
 
 ## 用法
 
-```vue
+```html
 <typical
   :steps="['Hello', 1000, 'Hello world!', 500]"
   :wrapper="'h2'"
@@ -38,6 +37,8 @@ npm install vue-typical
   :wrapper="'h3'"
 ></typical>
 ```
+
+[![Edit vue-typical](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-typical-cqj9q?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark)
 
 ## 属性
 
