@@ -31,7 +31,7 @@
             <typical
               :steps="code"
               :wrapper="'code'"
-              class="html"
+              class="html typicalWrapper"
             ></typical>
           </pre>
         </div>
