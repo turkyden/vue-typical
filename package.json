@@ -1,83 +1,20 @@
 {
   "name": "vue-typical",
-  "version": "1.6.2",
-  "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
-  "keywords": [
-    "vue",
-    "vue-component",
-    "typical",
-    "typing",
-    "animation"
-  ],
-  "authors": {
-    "name": "Turkyden",
-    "email": "wj871287@gmail.com"
-  },
-  "author": "Turkyden",
-  "license": "MIT",
-  "homepage": "https://turkyden.github.io/vue-typical",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Turkyden/vue-typical.git"
-  },
-  "bugs": {
-    "url": "http://github.com/Turkyden/vue-typical/issues"
-  },
-  "private": false,
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
-  "main": "dist/typical.umd.js",
-  "module": "dist/typical.common.js",
+  "version": "0.0.0",
   "scripts": {
-    "start": "vue-cli-service serve",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name typical src/typical.js",
-    "build:docs": "vue-cli-service build --dest build",
-    "lint": "vue-cli-service lint",
-    "test": "exit 0"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "core-js": "^2.6.12",
-    "highlight.js": "^10.6.0",
-    "vue": "^2.6.10",
-    "vue-highlightjs": "^1.3.3"
+    "vue": "^3.0.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-eslint": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "@types/node": "^16.6.1",
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4",
+    "vue-tsc": "^0.2.2"
+  }
 }

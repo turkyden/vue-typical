@@ -1,111 +1,27 @@
-English | [简体中文](./README.zh-cn.md) 
+# Vue 3 + Typescript + Vite
 
-<h1 align="center">vue-typical</h1>
+This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-<p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript. <a href="https://vue-typical.vercel.app/" target="_blank">Preview &rarr;</a></p>
+## Recommended IDE Setup
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
-</p>
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-[![Vue Typical](./vue-typical.gif)](https://vue-typical.vercel.app/)
-## 📦 Install
+### If Using `<script setup>`
 
-You can install vue-typical via npm:
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-```bash
-npm install vue-typical
-```
+## Type Support For `.vue` Imports in TS
 
-Or use it directly in browser via cdn service:
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/typical.umd.min.js"></script>
-```
+### If Using Volar
 
-## 🚀 Usage
+Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
-```html
-<typical
-  :steps="['Hello', 1000, 'Hello world!', 500]"
-  :wrapper="'h2'"
-></typical>
-<typical
-  class="typicalWrapper"
-  :steps="['Fucking', 1000, 'Fucking Awesome!', 500, 'Fucking Awesome! Aha :-) 👋', 1000]"
-  :loop="Infinity"
-  :wrapper="'h3'"
-></typical>
-```
+### If Using Vetur
 
-[![Edit vue-typical](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-typical-cqj9q?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark)
-
-## 📑 Properties
-
-| Prop|Required|Type|Eg.|
-|--|--|--|--|
-|`steps`|True|Array<String \| Number \| Function>|`['Hello', 1000, () => alert('Word')]`|
-|`loop`|False|Number|`1` or `'Infinity'` |
-|`wrapper`|False|String|`'div'`|
-
-## ✨ Style
-
-Add the blink cursor effect with `typicalWrapper` classname.
-
-```css
-.typicalWrapper::after {
-  content: "|";
-  animation: blink 1s infinite step-start;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-```
-
-## 🔨 Contributing
-
-``` npm
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-``` npm
-npm run serve
-```
-
-### Compiles and minifies for production
-
-``` npm
-npm run build
-```
-
-## ❤️ Contributors
-
-Thanks goes to these people (emoji key):
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Turkyden">
-        <img src="https://avatars0.githubusercontent.com/u/24560160?s=460&u=36a6072b8220e6ad7c0c7f7dbf97cc3dd796a8d0&v=4" width="100px;" alt=""/><br />
-        <sub><b>Turkyden</b></sub></a><br />
-        💻📖🚇⚠️
-    </td>
-    <td align="center">
-      <a href="https://github.com/KnowsCount">
-        <img src="https://avatars3.githubusercontent.com/u/56480008?s=460&u=19d370371e9be3b09766a4dae4435de3593fd0a9&v=4" width="100px;" alt=""/><br />
-        <sub><b>KnowsCount</b></sub></a><br />
-        📖
-    </td>
-  </tr>
-</table>  
-
-## License
-
-This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
-
-Inspired by [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical).
-
-[MIT](https://github.com/Turkyden/vue-typical/blob/main/LICENSE) © [Turkyden](https://github.com/Turkyden)
+1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
+2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
+3. Open `src/main.ts` in VSCode
+4. Open the VSCode command palette
+5. Search and run "Select TypeScript version" -> "Use workspace version"
