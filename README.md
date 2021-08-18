@@ -25,3 +25,25 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+
+
+岗位职责：
+
+1. 负责产品化二次开发
+2. 基于低代码开发平台
+
+职位描述
+
+1. 开发公司产品PC端和移动端产品，实现业务功能和交互效果；
+2. 优化产品性能和前端代码质量；
+3. 持续改进产品的易用性与用户体验。
+
+职位要求
+
+1. 本科及以上学历，1~3 年 WEB 前端开发经验；
+2. 熟练使用 JavaScript、HTML、CSS 等 WEB 前端技术；
+3. 熟练使用 React/Vue
+4. 熟悉各种跨浏览器兼容性技术，熟悉响应式布局和屏幕适配技术；
+5. 对页面布局具有深刻理解，注重细节，善于分析并改善产品的视觉感觉和用户体验；
+6. 快速学习能力和较强的团队协作能力与沟通能力。
