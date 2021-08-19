@@ -12,7 +12,7 @@ module.exports = {
   },
   base,
   themeConfig: {
-    // logo: '../logo.svg',
+    logo: '../logo.svg',
     nav: [{ text: 'demo', link: '/math' }],
     lang: 'en-US',
     locales: {
@@ -22,11 +22,18 @@ module.exports = {
         description: '',
         label: 'English',
         selectText: 'Languages',
-        nav: [{ text: 'Guide', link: '/' }],
+        nav: [
+          { text: 'Guide', link: '/' },
+          {
+            text: 'Changelog',
+            link:
+              'https://github.com/Turkyden/vue-typical/blob/master/CHANGELOG.md',
+          },
+        ],
         sidebar: [
           { text: 'Getting Started', link: '/' },
           {
-            text: 'Examples',
+            text: 'Demo',
             children: [
               { text: 'Basic Usage', link: '/basic/' },
               { text: 'Composition API', link: '/composition/' },
@@ -40,7 +47,14 @@ module.exports = {
         description: '',
         label: '中文',
         selectText: '语言',
-        nav: [{ text: '指南', link: '/' }],
+        nav: [
+          { text: '入门指南', link: '/' },
+          {
+            text: '更新日志',
+            link:
+              'https://github.com/Turkyden/vue-typical/blob/master/CHANGELOG.md',
+          },
+        ],
         sidebar: [
           { text: '快速开始', link: '/zh/' },
           {
@@ -56,7 +70,7 @@ module.exports = {
     search: {
       searchMaxSuggestions: 10,
     },
-    repo: '_user/vue-typical',
+    repo: 'Turkyden/vue-typical',
     repoLabel: 'Github',
     lastUpdated: true,
     prevLink: true,
