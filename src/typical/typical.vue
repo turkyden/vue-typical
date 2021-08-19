@@ -1,10 +1,10 @@
 <script lang="ts">
-import { h, defineComponent, onMounted, toRefs } from 'vue'
+import { h, onMounted, ref } from 'vue'
 import type from './type'
 
 const loopedType = type;
 
-export default defineComponent({
+export default {
   name: 'VueTypical',
   props: {
     steps: {
@@ -20,7 +20,7 @@ export default defineComponent({
       default: 1
     }
   },
-  render(createElement: any) {
+  render() {
     return h(
       this.wrapper, 
       {
@@ -29,24 +29,28 @@ export default defineComponent({
     )
   },
   setup: (props, context) => {
+    const myRef = ref(null);
+
     onMounted(() => {
-      console.log(context)
       const { steps, loop } = props;
+      const dom = myRef.value;
       if (loop === Infinity) {
-        type(context.$refs.myRef, ...steps, loopedType);
+        type(dom, ...steps, loopedType);
       } else if (typeof loop === "number" && loop > 0) {
         type(
-          context.$refs.myRef,
+          dom,
           ...Array(loop)
             .fill(steps)
             .flat()
         );
       } else {
-        type(context.$refs.myRef, ...steps);
+        type(dom, ...steps);
       }
     })
     
+    return {
+      myRef
+    }
   }
-})
-
+}
 </script>
