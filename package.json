@@ -2,17 +2,37 @@
   "name": "vue-typical",
   "version": "2.0.1",
   "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
-  "main": "./dist/vue-typical.umd.js",
-  "module": "./dist/vue-typical.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue-typical.es.js",
-      "require": "./dist/vue-typical.umd.js"
-    }
+  "keywords": [
+    "vue",
+    "vue-component",
+    "typical",
+    "typing",
+    "animation",
+    "vue3",
+    "components"
+  ],
+  "authors": {
+    "name": "Turkyden",
+    "email": "wj871287@gmail.com"
   },
-  "types": "dist/src/index.d.ts",
-  "author": "_user",
+  "homepage": "http://github.com/Turkyden/vue-typical",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Turkyden/vue-typical.git"
+  },
+  "bugs": {
+    "url": "http://github.com/Turkyden/vue-typical/issues"
+  },
   "license": "MIT",
+  "main": "dist/vue-typical.umd.js",
+  "module": "dist/vue-typical.es.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "start": "vitepress-fc dev --root=docs --host",
     "build": "vite build && yarn type",
@@ -62,11 +82,6 @@
     "vitepress-for-component": "latest",
     "vue-jest": "^5.0.0-alpha.6"
   },
-  "keywords": [
-    "vue",
-    "vue3",
-    "components"
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

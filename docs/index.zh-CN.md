@@ -5,7 +5,7 @@ English | [简体中文](https://vue-typical.vercel.app/zh/)
 <p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript. <a href="https://vue-typical.vercel.app" target="_blank">Preview &rarr;</a></p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
+  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://github.com/vuejs/vitepress" target="_blank"><img alt="vitepress" src="https://img.shields.io/badge/docs%20by-vitepress-blue" /></a> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
 </p>
 
 <!-- <p align="center">
@@ -80,7 +80,7 @@ If you use the plugin API, the `VTypical` component will be registered as a glob
 
 ### 3. Composition API
 
-You can also create typical animation by the react hook `useTypical`.
+You can also create typical animation by the composition API `useTypical`.
 
 ```typescript | pure
 const ref = useTypical(options);
