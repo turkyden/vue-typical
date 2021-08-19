@@ -1,6 +1,6 @@
 {
   "name": "vue-typical",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Vue Animated typing in ~400 bytes 🐡 of JavaScript.",
   "main": "./dist/vue-typical.umd.js",
   "module": "./dist/vue-typical.es.js",
