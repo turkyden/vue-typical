@@ -12,7 +12,7 @@ module.exports = {
   },
   base,
   themeConfig: {
-    logo: '../logo.svg',
+    logo: '/logo.svg',
     nav: [{ text: 'demo', link: '/math' }],
     lang: 'en-US',
     locales: {
