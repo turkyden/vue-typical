@@ -2,8 +2,8 @@ const base = process.env.NODE_ENV === 'production' ? '/vue-typical' : '';
 const { resolve } = require('path');
 
 module.exports = {
-  title: 'VueTypical',
-  description: 'ddsdsd',
+  title: 'Vue Typical',
+  description: '_description',
   // 扫描srcIncludes里面的 *.md文件
   srcIncludes: ['src'],
   alias: {
@@ -25,7 +25,13 @@ module.exports = {
         nav: [{ text: 'Guide', link: '/' }],
         sidebar: [
           { text: 'Getting Started', link: '/' },
-          { text: 'DEMO', link: '/components/typical/' },
+          {
+            text: 'Examples',
+            children: [
+              { text: 'Basic Usage', link: '/basic/' },
+              { text: 'Composition API', link: '/composition/' },
+            ],
+          },
         ],
       },
       '/zh/': {
@@ -36,8 +42,14 @@ module.exports = {
         selectText: '语言',
         nav: [{ text: '指南', link: '/' }],
         sidebar: [
-          { text: '介绍', link: '/zh/' },
-          { text: '示例', link: '/zh/components/typical/' },
+          { text: '快速开始', link: '/zh/' },
+          {
+            text: '示例',
+            children: [
+              { text: '基本方法', link: '/zh/basic/' },
+              { text: 'Composition API', link: '/zh/composition/' },
+            ],
+          },
         ],
       },
     },

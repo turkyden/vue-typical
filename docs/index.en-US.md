@@ -1,112 +1,121 @@
-English | [简体中文](./README_cn-zh.md)
+English | [简体中文](https://vue-typical.vercel.app/zh/)
+
+<h1 align="center">Vue Typical</h1>
+
+<p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript. <a href="https://vue-typical.vercel.app" target="_blank">Preview &rarr;</a></p>
 
 <p align="center">
-  <img align="center" alt="react-darkreader" src="https://darkreader.org/images/darkreader-icon-256x256.png" />
-</p>
-<h1 align="center">React Darkreader</h1>
-
-<p align="center">🌓 A React Hook for adding a dark / night mode to your site inspired by <a href="https://github.com/darkreader/darkreader" target="_blank">darkreader</a>
+  <a href="https://www.npmjs.com/package/vue-typical" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/vue-typical?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/vue-typical" /> <img alt="license" src="https://img.shields.io/github/license/Turkyden/vue-typical" /> <a href="https://www.jsdelivr.com/package/npm/vue-typical" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/vue-typical/badge" /></a>
 </p>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/react-darkreader" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/react-darkreader?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/react-darkreader" /> <a href="https://github.com/umijs/dumi" target="_blank"><img alt="dumi" src="https://img.shields.io/badge/docs%20by-dumi-blue" /></a> <img alt="license" src="https://img.shields.io/github/license/Turkyden/react-darkreader" /> <a href="https://www.jsdelivr.com/package/npm/react-darkreader" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/react-darkreader/badge" /></a>
-</p>
+<!-- <p align="center">
+  <a href="https://vue-typical.vercel.app/" target="_blank">
+    <img alt="npm" src="https://raw.githubusercontent.com/Turkyden/vue-typical/v2/vue-typical.gif" />
+  </a>
+</p> -->
 
-<p align="center">Live Demo ✨ <a href="https://react-darkreader.vercel.app" target="_blank">https://react-darkreader.vercel.app</a></p>
+<p align="center">Live Demo ✨ <a href="https://vue-typical.vercel.app" target="_blank">https://vue-typical.vercel.app</a></p>
 
-## Getting Started
+## 📦 Installation
 
 Install with yarn
 
 ```bash
-yarn add react-darkreader
+yarn add vue-typical
 ```
 
 Or you can
 
 ```bash
-npm install react-darkreader
+npm install vue-typical
 ```
 
 Or inject the script at your page by [jsdelivr CDN](https://www.jsdelivr.com/)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/react-darkreader@latest/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/vue-typical.umd.js"></script>
 ```
 
 ## 🚀 Usage
 
-You can import the darkmode as a react component.
+### 1. Component
 
-```tsx | pure
-import React from 'react';
-import Darkreader from 'react-darkreader';
+You can import it as a custom component.
 
-export default () => <Darkreader />;
-```
+```vue | pure
+<template>
+  <v-typical
+    class="blink"
+    :steps="['Hello', 1000, 'Hello World !', 500, 'Hello World ! 👋', 1000]"
+    :loop="Infinity"
+    :wrapper="'h2'"
+  ></v-typical>
+</template>
 
-You can also create darkmode by the react hook `useDarkreader`
+<script lang="ts">
+import VTypical from 'vue-typical';
 
-```tsx | pure
-import React from 'react';
-import { Switch, useDarkreader } from 'react-darkreader';
-
-export default () => {
-  const [isDark, { toggle }] = useDarkreader(false);
-
-  return <Switch checked={isDark} onChange={toggle} />;
+export default {
+  components: {
+    VTypical,
+  },
 };
+</script>
 ```
 
-## 📔 API
+### 2. Plugin API
 
-### Component
+If you want to configure default options, you can register this plugin through the use API of Vue.js.
 
 ```tsx | pure
-<Darkreader
-  defaultDarken
-  theme={/** Theme options **/}
-  fixes={/** Contains fixes for the generated theme **/}
-  onChange={isDark => {
-    /** Callback for change **/
-  }}
-/>
+// main.js or index.js
+import VTypical from 'vue-typical';
+
+Vue.use(VTypical, {
+  /* options */
+});
 ```
 
-### Hook
+If you use the plugin API, the `VTypical` component will be registered as a global component just like when including it with the `script` tag, but you won't need to re-register it through the `components` property in your own components.
+
+### 3. Composition API
+
+You can also create typical animation by the react hook `useTypical`.
 
 ```typescript | pure
-const [isDark, { toggle, collectCSS }] = useDarkreader(defaultDarken, theme?, fixes?)
+const ref = useTypical(options);
 ```
 
-with a toggle button as ui.
+Coming Soon ...
 
-```tsx | pure
-<Switch checked={isDark} onChange={toggle} />
+## 📑 Properties
+
+| Prop      | Required | Type                                | Eg.                                    |
+| --------- | -------- | ----------------------------------- | -------------------------------------- |
+| `steps`   | True     | Array<String \| Number \| Function> | `['Hello', 1000, () => alert('Word')]` |
+| `loop`    | False    | Number                              | `1` or `'Infinity'`                    |
+| `wrapper` | False    | String                              | `'div'`                                |
+
+## ✨ Style
+
+Add the blink cursor effect with `blink` classname.
+
+```css
+.blink::after {
+  content: '|';
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 ```
-
-### Result
-
-| Params     | Description                                             | Type                          |
-| ---------- | ------------------------------------------------------- | ----------------------------- |
-| isDark     | The status of current darkmode, support `true`, `false` | `boolean`                     |
-| toggle     | The function for toggling the darkmode.                 | `() => void`                  |
-| collectCSS | The async function for collecting the css of darkmode.  | `async () => Promise<string>` |
-
-### Params
-
-| Params        | Description                                                                                                                                                                   | Type              | Default |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------- |
-| defaultDarken | The default status of the darkreader                                                                                                                                          | `boolean`         | false   |
-| theme         | The options of darkreader Theme [refered to index.d.ts &rarr;](https://github.com/darkreader/darkreader/blob/13c93a995cde0b933580174106897bb1d13f53b4/index.d.ts#L41)         | `Partial<Theme>`  | -       |
-| fixes         | Contains fixes for the generated theme [refered to index.d.ts &rarr;](https://github.com/darkreader/darkreader/blob/13c93a995cde0b933580174106897bb1d13f53b4/index.d.ts#L121) | `DynamicThemeFix` | -       |
 
 ## 🔢 Coming Soon
 
-- [x] add the material design styling in switch
-- [ ] followSystemColorScheme
-- [ ] localstorge
-- [ ] playground for editing the config online
+- [ ] The demo of composition API in Vue 3.0
 
 ## 🔨 Contribute
 
@@ -134,19 +143,11 @@ Build library via `father-build`,
 $ npm run build
 ```
 
-## 🥇 Who is using
-
-| [Ant Design Pro Components Light](https://procomponents.ant.design/) | [Ant Design Pro Components Dark](https://procomponents.ant.design/) |
-| :------------------------------------------------------------------: | :-----------------------------------------------------------------: |
-|    ![Procomponents Light](./screenshot/pro-components_light.png)     |     ![Procomponents Dark](./screenshot/pro-components_dark.png)     |
-
-[More here &rarr;]() Welcome to submit.
-
 ## ❤️ Contributors
 
 Thanks goes to these people:
 
-![Contributors](https://contrib.rocks/image?repo=Turkyden/react-darkreader)
+![Contributors](https://contrib.rocks/image?repo=Turkyden/vue-typical)
 
 Please Feel free to enjoy and participate in open source!
 
@@ -154,8 +155,12 @@ Please Feel free to enjoy and participate in open source!
 
 Thanks for your star!
 
-[![Stargazers repo roster for @Turkyden/react-darkreader](https://reporoster.com/stars/Turkyden/react-darkreader)](https://github.com/Turkyden/react-darkreader/stargazers)
+[![Stargazers repo roster for @Turkyden/vue-typical](https://reporoster.com/stars/Turkyden/vue-typical)](https://github.com/Turkyden/vue-typical/stargazers)
 
-## License
+## 🔖 License
 
-[MIT](https://github.com/Turkyden/react-darkreader/blob/main/LICENSE)
+This library is based on [@camwiegert/typical](https://github.com/camwiegert/typical) work and it currently is just a wrapper for vue.
+
+Inspired by [@catalinmiron/react-typical](https://github.com/catalinmiron/react-typical).
+
+[MIT](https://github.com/Turkyden/vue-typical/blob/main/LICENSE) © [Turkyden](https://github.com/Turkyden)

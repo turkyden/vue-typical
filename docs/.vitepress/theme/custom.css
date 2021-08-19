@@ -1,0 +1,8 @@
+:root {
+  --c-brand: #10b981;
+  --c-brand-light: #34d399;
+}
+
+h2 {
+  border-bottom: none;
+}
