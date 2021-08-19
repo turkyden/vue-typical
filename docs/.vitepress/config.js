@@ -3,7 +3,7 @@ const { resolve } = require('path');
 
 module.exports = {
   title: 'Vue Typical',
-  description: '_description',
+  description: '',
   // 扫描srcIncludes里面的 *.md文件
   srcIncludes: ['src'],
   alias: {
@@ -19,7 +19,7 @@ module.exports = {
       '/': {
         lang: 'en-US',
         title: 'VueTypical',
-        description: '_description',
+        description: '',
         label: 'English',
         selectText: 'Languages',
         nav: [{ text: 'Guide', link: '/' }],
@@ -37,7 +37,7 @@ module.exports = {
       '/zh/': {
         lang: 'zh-CN',
         title: 'VueTypical',
-        description: '_description',
+        description: '',
         label: '中文',
         selectText: '语言',
         nav: [{ text: '指南', link: '/' }],
