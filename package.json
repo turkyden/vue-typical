@@ -25,12 +25,9 @@
     "docs:build-deploy": "yarn docs:build && yarn docs:deploy",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint": "eslint  src/**/*.{vue,js,ts,tsx}",
-    "lint:fix": "yarn lint -- --fix",
-    "ls-lint": "ls-lint",
-    "release": "np"
+    "lint:fix": "yarn lint -- --fix"
   },
   "devDependencies": {
-    "@ls-lint/ls-lint": "^1.9.2",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@types/jest": "^26.0.15",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
