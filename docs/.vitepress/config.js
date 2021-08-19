@@ -13,8 +13,6 @@ module.exports = {
   base,
   themeConfig: {
     logo: '/logo.svg',
-    nav: [{ text: 'demo', link: '/math' }],
-    lang: 'en-US',
     locales: {
       '/': {
         lang: 'en-US',
@@ -48,7 +46,7 @@ module.exports = {
         label: '中文',
         selectText: '语言',
         nav: [
-          { text: '入门指南', link: '/' },
+          { text: '入门指南', link: '/zh/' },
           {
             text: '更新日志',
             link:
