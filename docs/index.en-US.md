@@ -1,6 +1,6 @@
 English | [简体中文](https://vue-typical.vercel.app/zh/)
 
-<h1 align="center">Vue Typical</h1>
+<h1 style="font-size: 3.5rem" align="center">Vue Typical</h1>
 
 <p align="center">Vue Animated typing in ~400 bytes 🐡 of JavaScript. <a href="https://vue-typical.vercel.app" target="_blank">Preview &rarr;</a></p>
 
