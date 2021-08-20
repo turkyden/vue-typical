@@ -16,3 +16,7 @@ h2 {
   border-bottom: none !important;
   box-shadow: 0 8px 24px -2px rgb(0 0 0 / 5%);
 }
+
+.sidebar{
+  width: 16rem !important;
+}
