@@ -116,6 +116,7 @@ Add the blink cursor effect with `blink` classname.
 ## 🔢 Coming Soon
 
 - [ ] The demo of composition API in Vue 3.0
+- [ ] Supported Vue 2 & 3
 
 ## 🔨 Contribute
 
