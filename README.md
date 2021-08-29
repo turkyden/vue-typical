@@ -36,7 +36,7 @@ Or inject the script at your page by [jsdelivr CDN](https://www.jsdelivr.com/)
 <script src="https://cdn.jsdelivr.net/npm/vue-typical@latest/dist/vue-typical.umd.js"></script>
 ```
 
-> 💡 This library Just support Vue 3
+> 💡 This library Just support Vue 3 now
 
 If you are Vue 2, please see the [branch v1](https://github.com/Turkyden/vue-typical/tree/v1) and install [vue-typical@1.6.2](https://github.com/Turkyden/vue-typical/tree/v1)
 
